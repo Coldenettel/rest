@@ -1,0 +1,4 @@
+function filterOutOdds(...nums) {
+  // Convert the arguments to an array using the rest operator
+  return nums.filter(num => num % 2 === 0);
+}
