@@ -1,0 +1,5 @@
+const getMinimum = (...numbers) => Math.min(...numbers);
+
+console.log(getMinimum(1, 4, 12, -3)); // Outputs: -3
+console.log(getMinimum(1, -1));        // Outputs: -1
+console.log(getMinimum(3, 1));          // Outputs: 1
