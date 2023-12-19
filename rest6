@@ -1,0 +1,36 @@
+// Remove a randomly chosen element from the 'items' array and return a new array without that item.
+const removeRandomItem = items => {
+  let randomIndex = Math.floor(Math.random() * items.length);
+  return [...items.slice(0, randomIndex), ...items.slice(randomIndex + 1)];
+}
+
+// Return a new array containing every item from both 'array1' and 'array2'.
+const mergeArrays = (array1, array2) => {
+  return [...array1, ...array2];
+}
+
+// Return a new object with all the existing keys and values from 'obj' and an additional key/value pair.
+const addKeyValue = (obj, key, val) => {
+  let updatedObj = { ...obj };
+  updatedObj[key] = val;
+  return updatedObj;
+}
+
+// Return a new object with a specified key removed.
+const removeKeyValue = (obj, key) => {
+  let updatedObj = { ...obj };
+  delete updatedObj[key];
+  return updatedObj;
+}
+
+// Combine two objects and return a new object.
+const mergeObjects = (obj1, obj2) => {
+  return { ...obj1, ...obj2 };
+}
+
+// Return a new object with a modified key and value.
+const modifyKeyValue = (obj, key, val) => {
+  let updatedObj = { ...obj };
+  updatedObj[key] = val;
+  return updatedObj;
+}
