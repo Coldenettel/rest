@@ -1,0 +1,1 @@
+const excludeOddNumbers = (...numbers) => numbers.filter(value => value % 2 === 0);
